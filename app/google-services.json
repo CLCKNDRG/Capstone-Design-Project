@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "534793389858",
+    "firebase_url": "https://nook-video-calling.firebaseio.com",
+    "project_id": "nook-video-calling",
+    "storage_bucket": "nook-video-calling.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534793389858:android:f2b6e7bea47c97c899c77b",
+        "android_client_info": {
+          "package_name": "com.example.videocalling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534793389858-slerbhul2b5dver4grs169s0r05nffrs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwk6g4ovm6hVvvIYaaJ9051Qmb49DQZn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534793389858-slerbhul2b5dver4grs169s0r05nffrs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
