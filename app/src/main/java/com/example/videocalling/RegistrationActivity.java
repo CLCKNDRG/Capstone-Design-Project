@@ -26,13 +26,15 @@ import java.util.concurrent.TimeUnit;
 
 public class RegistrationActivity extends AppCompatActivity {
 
-    private CountryCodePicker ccp;
-    private EditText phoneText;
-    private EditText codeText;
-    private Button continueAndNextBtn;
-    private String checker = "", phoneNumber = "";
-    private RelativeLayout relativeLayout;
+    //오브젝트 선언
+    private CountryCodePicker ccp;  //국가코드 선택
+    private EditText phoneText; //핸드폰 번호 입력
+    private EditText codeText;  //인증번호 입력
+    private Button continueAndNextBtn;  //확인 및 계속
+    private String checker = "", phoneNumber = "";  //코드 체크 및 번호 체크
+    private RelativeLayout relativeLayout;  //레이아웃
 
+    //인증 관련 오브젝트
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
     private FirebaseAuth mAuth;
     private String mVerificationId;

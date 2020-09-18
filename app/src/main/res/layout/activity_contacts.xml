@@ -5,20 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- 상단 툴바 -->
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar_layout_contacts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- 툴바 디자인 -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_contacts"
             android:layout_width="match_parent"
             android:layout_height="50dp">
 
+            <!-- 레이아웃 -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <!-- 메뉴 타이틀 -->
                 <TextView
                     android:text="Contacts"
                     android:layout_width="wrap_content"
@@ -29,6 +33,7 @@
                     android:textColor="@android:color/white">
                 </TextView>
 
+                <!-- 새 친구 추가 버튼 -->
                 <ImageView
                     android:id="@+id/find_people_btn"
                     android:layout_width="38dp"
@@ -44,6 +49,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+    <!-- 연락처 리스트 -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/contact_list"
         android:layout_below="@id/app_bar_layout_contacts"
@@ -52,6 +58,7 @@
         android:layout_height="match_parent">
     </androidx.recyclerview.widget.RecyclerView>
 
+    <!-- 하단 내비게이션 바 -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="match_parent"

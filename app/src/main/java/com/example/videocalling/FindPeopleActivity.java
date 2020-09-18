@@ -32,6 +32,7 @@ public class FindPeopleActivity extends AppCompatActivity {
         findFriendList.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
     }
 
+    //contact_design 오브젝트 및 컴포넌트 관리
     public static class FindFriendsViewHolder extends RecyclerView.ViewHolder {
         //오브젝트 선언
         TextView userNameTxt;

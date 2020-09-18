@@ -7,6 +7,7 @@
     android:background="@drawable/register"
     tools:context=".RegistrationActivity">
 
+    <!-- 레이아웃 -->
     <TextView
         android:id="@+id/textview1"
         android:layout_width="match_parent"
@@ -15,6 +16,7 @@
         android:layout_marginTop="260dp">
     </TextView>
 
+    <!-- 사용자 번호 입력란 -->
     <RelativeLayout
         android:id="@+id/phoneAuth"
         android:layout_width="match_parent"
@@ -25,11 +27,13 @@
         android:layout_marginRight="25dp"
         android:padding="8dp">
 
+        <!-- 레이아웃 정렬 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- 환영 메세지 -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,11 +42,13 @@
                 android:textSize="18sp"
                 android:textStyle="bold"/>
 
+            <!-- 국가 코드 및 핸드폰 번호 입력 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical">
 
+                <!-- 국가 코드 선택란 -->
                 <com.hbb20.CountryCodePicker
                     android:id="@+id/ccp"
                     android:layout_width="wrap_content"
@@ -50,20 +56,24 @@
                     android:background="@android:color/white"
                     app:ccp_defaultNameCode="KR"/>
 
+                <!-- 핸드폰 번호 입력란 -->
                 <EditText
                     android:id="@+id/phoneText"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:backgroundTint="@android:color/white"
-                    android:hint="번호를 입력하세요"
+                    android:hint="핸드폰 번호를 입력하세요"
                     android:inputType="phone"
                     android:singleLine="true"
                     android:textColor="@android:color/white"
                     android:textColorHint="@android:color/darker_gray"/>
             </LinearLayout>
+
         </LinearLayout>
+
     </RelativeLayout>
 
+    <!-- 인증번호 입력란 -->
     <EditText
         android:id="@+id/codeText"
         android:layout_width="match_parent"
@@ -71,7 +81,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:hint="비밀번호를 입력하세요..."
+        android:hint="인증번호를 입력하세요..."
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
         android:inputType="phone"
@@ -81,6 +91,7 @@
         android:backgroundTint="@android:color/white"
         android:visibility="gone"/>
 
+    <!-- 영상통화 시작 버튼 -->
     <Button
         android:id="@+id/continueNextButton"
         android:layout_width="120dp"

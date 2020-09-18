@@ -25,13 +25,16 @@ public class ContactsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contacts);
 
+        //하단 내비게이션 컴포넌트 연결
         navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
+        //연락처 리스트 컴포넌트 연결
         findPeopleBtn = findViewById(R.id.find_people_btn);
         myContactsList = findViewById(R.id.contact_list);
         myContactsList.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 
+        //친구 찾기 버튼 리스너
         findPeopleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

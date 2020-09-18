@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 public class NotificationsActivity extends AppCompatActivity {
 
+    //오브젝트 선언
     private RecyclerView notifications_list;
 
     @Override
@@ -22,10 +23,12 @@ public class NotificationsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications);
 
+        //컴포넌트 연결
         notifications_list = findViewById(R.id.notification_list);
         notifications_list.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
     }
 
+    //find_friend_design 오브젝트 및 컴포넌트 관리
     public static class NotificationsViewHolder extends RecyclerView.ViewHolder {
         //오브젝트 선언
         TextView userNameTxt;
