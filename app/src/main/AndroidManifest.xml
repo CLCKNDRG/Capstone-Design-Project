@@ -11,13 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".ContactsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".FindPeopleActivity"></activity>
-        <activity android:name=".NotificationsActivity" />
-        <activity android:name=".SettingsActivity" />
-        <activity
-            android:name=".ContactsActivity"
-            android:label="@string/title_activity_main" />
-        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".NotificationsActivity"></activity>
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".RegistrationActivity"></activity>
+
     </application>
 
 </manifest>
